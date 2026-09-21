@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+import os, glob
+
+OUTPUT_FILE = "/Users/bingo/Code/LYi/projects/laoma-engine-showcase/index.html"
+
+html_code = """<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -2030,3 +2034,9 @@
   </script>
 </body>
 </html>
+"""
+
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    f.write(html_code)
+
+print("Perfect Showcase with zero truncation, enlarged videos, and bulletproof autoplay built successfully!")
